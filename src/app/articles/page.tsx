@@ -1,6 +1,6 @@
+import Article from "../(components)/Article";
 import AnimatedText from "../(components)/AnimatedText";
 import FeaturedArticle from "../(components)/FeaturedArticle";
-import Article from "../(components)/Article";
 import article1 from "../../../public/images/articles/article_list.png";
 import article2 from "../../../public/images/articles/article_portfolio.png";
 import article3 from "../../../public/images/articles/article_redirect.png";

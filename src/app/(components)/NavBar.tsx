@@ -1,5 +1,9 @@
 "use client";
 import Link from "next/link";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { useRouter, usePathname } from "next/navigation";
+
 import Logo from "./Logo";
 import {
   GithubIcon,
@@ -9,10 +13,7 @@ import {
   SunIcon,
   TwitterIcon,
 } from "./Icons";
-import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
-import { useState } from "react";
-import { useRouter, usePathname } from "next/navigation";
 
 type CustomLinkProps = {
   href: string;
@@ -77,9 +78,7 @@ const NavBar = () => {
   const [mode, setMode] = useThemeSwitcher();
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
+  const handleClick = () => setIsOpen(!isOpen);
 
   return (
     <header className="w-full px-32 py-8 flex items-center justify-between font-medium dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8">
@@ -141,7 +140,7 @@ const NavBar = () => {
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my hashnode profile"
           >
-            <HashNodeIcon className="dark:fill-white"/>
+            <HashNodeIcon className="dark:fill-white" />
           </motion.a>
           <motion.a
             href="https://twitter.com/irehmanullah"
@@ -151,7 +150,7 @@ const NavBar = () => {
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my twitter profile"
           >
-            <TwitterIcon />
+            <TwitterIcon className="dark:fill-white" />
           </motion.a>
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -230,7 +229,7 @@ const NavBar = () => {
               whileTap={{ scale: 0.9 }}
               aria-label="Checkout my hashnode profile"
             >
-              <HashNodeIcon className="dark:fill-white"/>
+              <HashNodeIcon className="dark:fill-white" />
             </motion.a>
             <motion.a
               href="https://twitter.com/urstrulyyashu5"

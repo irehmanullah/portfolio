@@ -1,8 +1,8 @@
+import Skills from "../(components)/Skills";
+import Education from "../(components)/Education";
+import Experience from "../(components)/Experience";
 import AnimatedText from "../(components)/AnimatedText";
 import AnimatedNumber from "../(components)/AnimatedNumber";
-import Skills from "../(components)/Skills";
-import Experience from "../(components)/Experience";
-import Education from "../(components)/Education";
 
 export const metadata = {
   title: "Rehman Ullah - About",
@@ -23,12 +23,12 @@ const about = () => {
             Biography
           </h2>
           <p className="font-medium">
-            Hi, I&apos;m <strong>Rehman Ullah</strong>, an experienced Full Stack
-            web developer with a strong passion for creating exceptional digital
-            experiences. With 4 years of expertise, I specialize in delivering
-            high-quality and user-friendly websites. My focus goes beyond
-            writing clean code – I strive to optimize user experiences and
-            ensure seamless navigation.
+            Hi, I&apos;m <strong>Rehman Ullah</strong>, an experienced Full
+            Stack web developer with a strong passion for creating exceptional
+            digital experiences. With 4 years of expertise, I specialize in
+            delivering high-quality and user-friendly websites. My focus goes
+            beyond writing clean code – I strive to optimize user experiences
+            and ensure seamless navigation.
           </p>
           <p className="my-4 font-medium">
             From building responsive websites to developing interactive web

@@ -1,9 +1,10 @@
-import NavBar from "./(components)/NavBar";
-import Footer from "./(components)/Footer";
-import "./globals.css";
+import Script from "next/script";
 import { Montserrat } from "next/font/google";
 import { Analytics } from '@vercel/analytics/react'
-import Script from "next/script";
+
+import "./globals.css";
+import NavBar from "./(components)/NavBar";
+import Footer from "./(components)/Footer";
 
 const monserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
 

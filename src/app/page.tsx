@@ -1,10 +1,9 @@
-import Image from "next/image";
-import profilePic from "../../public/images/profile/r86fgt-removebg-preview.png";
-import AnimatedText from "./(components)/AnimatedText";
 import Link from "next/link";
+import Image from "next/image";
+
 import { LinkArrow } from "./(components)/Icons";
-import HireMe from "./(components)/HireMe";
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+import AnimatedText from "./(components)/AnimatedText";
+import profilePic from "../../public/profile_pic.png";
 
 export const metadata = {
   title: "Rehman Ullah - Home",
@@ -40,8 +39,7 @@ export default function Home() {
             <Link
               href="/rehmanullah_ullah_resume.pdf"
               target="_blank"
-              className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent 
-  hover:border-dark dark:text-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
+              className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:text-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
             >
               Resume
               <LinkArrow className="!w-6 ml-1 md:!w-4" />
@@ -55,10 +53,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </div>
-      {/* <HireMe /> */}
-      <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
-        <Image src={lightBulb} alt="RehmanUllah" className="w-full h-auto" />
       </div>
     </>
   );
