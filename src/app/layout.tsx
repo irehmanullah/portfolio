@@ -1,6 +1,6 @@
 import Script from "next/script";
 import { Montserrat } from "next/font/google";
-import { Analytics } from '@vercel/analytics/react'
+import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 import NavBar from "./(components)/NavBar";
