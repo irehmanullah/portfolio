@@ -1,12 +1,7 @@
 import AnimatedText from "../(components)/AnimatedText";
 import FeaturedProject from "../(components)/FeaturedProject";
 import Project from "../(components)/Project";
-import project1 from "../../../public/images/projects/SM-Project.jpg";
-import project2 from "../../../public/images/projects/PF-Project.png";
-import project3 from "../../../public/images/projects/SC-Project.jpg";
-import project4 from "../../../public/images/projects/DS-Project.jpg";
-import project5 from "../../../public/images/projects/WFS-Project.jpg";
-import project6 from "../../../public/images/projects/Discuss-Project.jpeg";
+import DevConnectorBanner from "../../../public/Dev-Connector.png";
 
 export const metadata = {
   title: "Rehman Ullah - Projects",
@@ -18,12 +13,11 @@ const projects = () => {
   return (
     <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
       <AnimatedText
-        // text="Creativity Prevails over Knowledge!"
-        text="Upcoming"
+        text="Ideas in Action"
         className="mb-16 mt-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl !leading-tight !text-8xl sm:mt-8"
       />
-      {/* <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-        <div className="col-span-12">
+      <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+        {/* <div className="col-span-12">
           <FeaturedProject
             title="Monitor Dashboard"
             img={project1}
@@ -33,18 +27,18 @@ const projects = () => {
             type="Saas Application"
             isPrivate
           />
-        </div>
+        </div> */}
         <div className="col-span-12">
           <FeaturedProject
-            title="Discuss - Reddit Basic Clone"
-            img={project6}
-            summary="Next.js 14 simple Reddit clone with Server actions, Tailwind, Prisma, Zod, PlanetScale, ShadcnUI and NextAuth."
-            link="https://dub.sh/discuss-reddit"
-            github="https://github.com/yashug/Discuss"
-            type="Saas Application"
+            title="Highlight Your Dev Journey!"
+            img={DevConnectorBanner}
+            summary="DevConnector is your go-to platform to build a standout developer profile and link your GitHub repositories. Share your work, post updates, and engage with other developers' posts to inspire and be inspired within the developer community."
+            link="https://dev-connector-app.web.app/"
+            github="https://github.com/irehmanullah/Dev-Connector"
+            type="Social Networking Platform "
           />
         </div>
-        <div className="col-span-12">
+        {/* <div className="col-span-12">
           <FeaturedProject
             title="Next js Portfolio Website"
             img={project2}
@@ -53,8 +47,8 @@ const projects = () => {
             github="https://github.com/irehmanullah/portfolio"
             type="Portfolio Website"
           />
-        </div>
-        <div className="col-span-6 sm:col-span-12">
+        </div> */}
+        {/* <div className="col-span-6 sm:col-span-12">
           <Project
             title="Streamlined Component Library"
             img={project4}
@@ -73,19 +67,8 @@ const projects = () => {
             type="Workflow Automation"
             isPrivate
           />
-        </div>
-        <div className="col-span-12">
-          <FeaturedProject
-            title="Real-time Communication and Collaboration"
-            img={project3}
-            summary="A revolutionary messaging application created for Sitedocs, that enhances collaboration and productivity with real-time communication and Slack-like features. Explore the website to witness seamless user engagement and the power of interactive messaging."
-            link="https://www.sitedocs.com/features/#certification-tracking-1"
-            github="/"
-            type="Chat Application"
-            isPrivate
-          />
-        </div>
-      </div> */}
+        </div> */}
+      </div>
     </main>
   );
 };
